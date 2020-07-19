@@ -7,6 +7,9 @@ This API returns a new Wifi name for every GET request you send to it.
 
 # Want to run this? 
 Fork it into your local disk and run "npm install". 
+Or go over to https://arcane-sea-11213.herokuapp.com/. 
+
+You can even send GET requests to this endpoint in POSTMAN or similar applications :)
 
 
 # Contributors
