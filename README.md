@@ -14,6 +14,7 @@ You can even send GET requests to this endpoint in POSTMAN or similar applicatio
 
 # Contributors
 If you are a contributor and would love to contribute, be it to the readme or adding new code. You can even add new Wifinames! 
+However please 
 
 Also if you like this API, please star it <3
 
