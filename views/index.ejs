@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wifi name Generator </title>
+</head>
+
+<body>
+    <h1> Want a name for your WIFI ??</h1>
+    <h2> We have got you covered 😁</h2>
+    <button onclick="generate()"> Generate WIFI Name </button>
+    <br> <br>
+    <div id="content"> </div>
+</body>
+<script>
+    const generate = () => {
+        const content = document.getElementById('content');
+        //content.innerHTML = ""; 
+        fetch("https://wifiname.azurewebsites.net/api")
+            .then((result) => result.json())
+            .then((data) => { 
+                console.log(data);
+                content.innerHTML = JSON.stringify(`${data.name}`); 
+            })
+            .catch((error) => console.log(error));
+    }
+</script>
+
+</html>
